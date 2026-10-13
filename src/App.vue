@@ -16,7 +16,7 @@ function increment(){
 // Define a function to decrement the counter value
 function decrement(){
   // Prevent the negative counter value by checking if the counter is grater than 0 befor decrement
-  if(counter.value >= 0){
+  if(counter.value > 0){
     counter.value--;
   }
 }
