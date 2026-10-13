@@ -32,8 +32,8 @@ function reset(){
   <div class="counter-value">
     {{ counter }}
   </div>
-  <div class="counter-actions">
-    <button class="increment-action" @click="increment">Increment</button>
+  <div class="counter-actions flex gap-2">
+    <button class="increment-action btn-primary" @click="increment">Increment</button>
     <button class="decrement-action" @click="decrement">Decrement</button>
     <button class="reset-action" @click="reset">Reset</button>
 
@@ -41,4 +41,10 @@ function reset(){
   
 </template>
 
-<style scoped></style>
+<style scoped>
+@reference "./assets/main.css";
+
+.btn-primary {
+  @apply px-4 py-2 bg-blue-600 text-white rounded;
+}
+</style>
